@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Tuo Output!</title>
+    <style>
+        body {
+            background-color: #2d2d2d;
+            color: #fff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ffcc00;
+            animation: bounce 1s infinite;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #00ffcc;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>🎉 Questo è il tuo output! 🎉</h1>
+        <p>Hai appena completato un'altra missione con successo. Complimenti! 😎</p>
+    </div>
+</body>
+</html>
