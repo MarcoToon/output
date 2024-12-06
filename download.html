@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download</title>
+    <title>Scarica il tuo output</title>
     <script>
-        window.location.href = 'https://marcotoon.github.io/output/output.html';  // Sostituisci con il link corretto al tuo file
+        window.onload = function() {
+            // Imposta l'URL del file che vuoi far scaricare
+            var fileURL = "https://marcotoon.github.io/output/output.html"; 
+            
+            // Crea un link temporaneo per il download
+            var a = document.createElement("a");
+            a.href = fileURL;
+            a.download = "output.html";  // Nome del file da scaricare
+            a.click();  // Simula un click sul link
+            
+            // Redirige alla pagina di GitHub per il caso in cui non funzioni
+            window.location.href = fileURL;
+        };
     </script>
 </head>
 <body>
-    <p>Redirecting to the download...</p>
+    <p>Attendere mentre il file viene scaricato...</p>
 </body>
 </html>
