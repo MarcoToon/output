@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scarica il tuo output</title>
-    <script>
+
+	<script>
         window.onload = function() {
             // Imposta l'URL del file che vuoi far scaricare
             var fileURL = "https://marcotoon.github.io/output/output.html"; 
@@ -19,16 +20,17 @@
             // Rimuovi il link temporaneo
             document.body.removeChild(a);
         };
-    </script>
- <style>
+    	</script>
+
+        <style>
         /* Imposta l'immagine di sfondo */
         body {
-            background-image: url('sfondodownload.png'); /* Sostituisci con il link dell'immagine */
-            background-size: cover; /* Copre tutta la larghezza e altezza della pagina */
-            background-position: center; /* Centra l'immagine */
-            background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
-            height: 100vh; /* Imposta l'altezza della pagina */
-            margin: 0; /* Rimuove il margine di default */
+            background-image: url("sfondodownload.png"); /* Sostituisci con il percorso corretto */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Altezza totale della finestra */
+            margin: 0;
         }
         .content {
             display: flex;
@@ -41,6 +43,5 @@
     </style>
 </head>
 <body>
-    
-</body>
+    </body>
 </html>
