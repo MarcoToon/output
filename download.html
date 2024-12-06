@@ -13,10 +13,16 @@
             var a = document.createElement("a");
             a.href = fileURL;
             a.download = "output.html";  // Nome del file da scaricare
+            document.body.appendChild(a);  // Aggiungi il link temporaneo al DOM
             a.click();  // Simula un click sul link
             
-            // Redirige alla pagina di GitHub per il caso in cui non funzioni
-            window.location.href = fileURL;
+            // Rimuovi il link temporaneo
+            document.body.removeChild(a);
+
+            // In caso non funzioni, redirige
+            setTimeout(function() {
+                window.location.href = fileURL;
+            }, 2000); // Dopo 2 secondi tenta la redirezione
         };
     </script>
 </head>
