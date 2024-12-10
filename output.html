@@ -42,17 +42,23 @@
 	margin-top: 100px;
 	margin-left: 15px;
 	}
-	.section-2 {
+	.section-2 { 
 	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/green-background.png') no-repeat center/cover;
 	height: 70vh;
 	position: relative;
-	align-items: flex-start; /* Allinea tutto a sinistra */
+	}
+	.wrap { 
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: center;
+	padding: 20px;
 	}
 	.section-2 img.bird {
 	width: 210px;
 	position: absolute;
-	margin-top: 150px;
-	margin-left: 220px;
+	margin-top: 170px;
+	margin-left: 200px;
 	}
 	.section-2 .text-image {
 	max-width: 92%; /* Adatta la larghezza per dispositivi mobili */
@@ -60,21 +66,17 @@
 	margin-left: 20px;
 	position: relative;
 	text-align: left; /* Assicura che il testo nelle immagini sia allineato a sinistra */
-	}
+	} 
 	.section-3 {
-	height: 66vh;
+	height: 72vh;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
- 	padding-left: 20px;
 	}
 	.section-3 .image-row2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	margin: 30px 0;
+	margin: 43px 0;
 	padding-right: 40px; /* Spazio dal bordo destro */
 	position: relative;
 	}
@@ -83,7 +85,7 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	margin: 18px 0;
+	margin: 13px 0;
 	padding-right: 40px; /* Spazio dal bordo destro */
 	position: relative;
 	}
@@ -92,37 +94,41 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	margin-top: 125px;
+	margin-top: 150px;
 	margin-bottom: 15px;
 	padding-right: 40px; /* Spazio dal bordo destro */
 	position: relative;
 	}
 	.section-3 .image-row3 img {
 	height: 25px;
-	margin-left: 40px;
+	margin-left: 15px;
 	}
 	.section-3 .image-row1 img {
 	height: 25px;
-	margin-left: 40px;
+	margin-left: 15px;
 	}
 	.section-3 .image-row2 img {
 	height: 25px;
-	margin-left: 40px;
+	margin-left: 15px;
 	}
 	.section-3 .percentage {
 	font-size: 32px;
 	font-weight: bold;
 	color: #0005F9;
 	position: absolute;
-	right: 25px; /* Allineamento a destra */
+	right: 10px; /* Allineamento a destra */
 	}
 	.section-3 .background-image {
 	position: absolute;
-	bottom: 0;
-	left: 40px;
 	top: 10px;
-	width: 80%;
+	max-width: 90%
 	z-index: -1;
+	}
+	.wrap2 { 
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 400px;
 	}
 	.section-4 {
 	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/pink-background.png') no-repeat center/cover;
@@ -163,6 +169,7 @@
 	</div>
 	<!-- Sezione 2 -->
 	<div class="section section-2">
+	<div class="wrap">
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/fightfanbird.png" alt="Bird" class="bird">
 	<img src="section-2-1.png" alt="Section Text" class="text-image">
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/fightfan.png" alt="Section Text" class="text-image">
@@ -170,8 +177,11 @@
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/nerd.png" alt="Section Text" class="text-image">
 	<img src="section-2-3.png" alt="Section Text" class="text-image">
 	</div>
+	</div>
 	<!-- Sezione 3 -->
 	<div class="section section-3">
+	<div class="wrap2">
+	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-3-1.png" alt="Background" class="background-image">
 	<div class="image-row1">
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/lovecam.png" alt="Immagine 1">
 	<div class="percentage">85%</div>
@@ -184,7 +194,7 @@
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/everydaylife.png" alt="Immagine 3">
 	<div class="percentage">15%</div>
 	</div>
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-3-1.png" alt="Background" class="background-image">
+	</div>
 	</div>
 	<!-- Sezione 4 -->
 	<div class="section section-4">
