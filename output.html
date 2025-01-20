@@ -197,12 +197,12 @@
 	<div class="section section-2">
 	<div class="wrap">
 	<div class="box">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/fightfanbird.png" alt="Bird" class="bird">
+	<img id="uccello1-image" src="" alt="Bird" class="bird">
 	</div>
 	<img src="section-2-1.png" alt="Section Text" class="text-image">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/fightfan.png" alt="Section Text" class="tag1">
+	<img id="personalita1-image" src="" alt="Section Text" class="tag1">
 	<img src="section-2-2.png" alt="Section Text" class="text-image">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sentimentalsoul.png" alt="Section Text" class="tag2">
+	<img id="personalita2-image" src="" alt="Section Text" class="tag2">
 	</div>
 	</div>
 	<!-- Sezione 3 -->
@@ -211,18 +211,18 @@
 	<div class="wrap2">
 	<div class="image-row1">
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image1">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/highintensity.png" alt="Immagine 1">
-	<div class="percentage">60%</div>
+	<img id="tag1-image" src="" alt="Immagine 1">
+	<div id="percentuale1" class="percentage"></div>
 	</div>
 	<div class="image-row2">
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image2">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/conflict.png" alt="Immagine 2">
-	<div class="percentage">25%</div>
+	<img id="tag2-image" src="" alt="Immagine 2">
+	<div id="percentuale2" class="percentage"></div>
 	</div>
 	<div class="image-row3">
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image3">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/studysession.png" alt="Immagine 3">
-	<div class="percentage">15%</div>
+	<img id="tag3-image" src="" alt="Immagine 3">
+	<div id="percentuale3" class="percentage"></div>
 	</div>
 	</div>
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-3-button.png" alt="Immagine 1" class="bottone">
@@ -239,8 +239,26 @@
 	</div>
 	<script>
 	const params = new URLSearchParams(window.location.search);
+	const uccello1 = params.get('uccello1');
+        const personalita1 = params.get('personalita1');
+        const personalita2 = params.get('personalita2');
 	const uccello2 = params.get('uccello2');
+	const tag1 = params.get('tag1');
+        const tag2 = params.get('tag2');
+        const tag3 = params.get('tag3');
+        const percentuale1 = params.get('percentuale1');
+        const percentuale2 = params.get('percentuale2');
+        const percentuale3 = params.get('percentuale3');
 	if (uccello2) document.getElementById('uccello2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello2}.png`;
+	if (tag1) document.getElementById('tag1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag1}.png`;
+        if (tag2) document.getElementById('tag2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag2}.png`;
+        if (tag3) document.getElementById('tag3-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag3}.png`;
+	if (percentuale1) document.getElementById('percentuale1').innerText = `${percentuale1}%`;
+        if (percentuale2) document.getElementById('percentuale2').innerText = `${percentuale2}%`;
+        if (percentuale3) document.getElementById('percentuale3').innerText = `${percentuale3}%`;
+	if (uccello1) document.getElementById('uccello1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello1}bird.png`;
+        if (personalita1) document.getElementById('personalita1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita1}.png`;
+        if (personalita2) document.getElementById('personalita2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita2}.png`;
 	</script>
 	</body>
 	</html>
