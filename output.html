@@ -229,7 +229,7 @@
 	</div>
 	<!-- Sezione 4 -->
 	<div class="section section-4">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sparrow.png" alt="Section Text" class="text-image">
+	<img id="uccello2-image" src="" alt="Section Text" class="text-image">
 	</div>
 	<!-- Sezione 5 -->
 	<div class="section section-5">
@@ -237,6 +237,11 @@
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/mano.png" alt="Mano" class="mano">
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/logo-vtv-2.png" alt="Vtv Logo 2" class="logo2">
 	</div>
+	<script>
+	const params = new URLSearchParams(window.location.search);
+	const uccello2 = params.get('uccello2');
+	if (uccello2) document.getElementById('uccello2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello2}.png`;
+	</script>
 	</body>
 	</html>
 	
