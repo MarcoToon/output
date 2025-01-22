@@ -42,16 +42,9 @@
 	text-align: center;
 	width: 100%;
 	}
-	.box {
-	position: absolute;
-	margin-top: 120px;
-	margin-left: 116px;
-	width: 227px;
-	overflow: hidden;
-	}
 	.section-2 img.bird {
-	width: 300px;
-	object-fit: cover;
+	position: absolute;
+	width: 100%;
 	}
 	.section-2 .text-image {
 	width: 100%; /* Adatta la larghezza per dispositivi mobili */
@@ -187,9 +180,7 @@
 	<!-- Sezione 2 -->
 	<div class="section section-2">
 	<div class="wrap">
-	<div class="box">
 	<img id="uccello1-image" src="" alt="Bird" class="bird">
-	</div>
 	<img src="section-2-1.png" alt="Section Text" class="text-image">
 	<img id="personalita1-image" src="" alt="Section Text" class="tag1">
 	<img src="section-2-2.png" alt="Section Text" class="text-image">
@@ -240,6 +231,9 @@
         const percentuale1 = params.get('percentuale1');
         const percentuale2 = params.get('percentuale2');
         const percentuale3 = params.get('percentuale3');
+	const rettangolo1 = document.getElementById('rettangolo1');
+        const rettangolo2 = document.getElementById('rettangolo2');
+        const rettangolo3 = document.getElementById('rettangolo3');
 	if (uccello2) document.getElementById('uccello2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello2}.png`;
 	if (tag1) document.getElementById('tag1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag1}.png`;
         if (tag2) document.getElementById('tag2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag2}.png`;
@@ -247,9 +241,9 @@
 	if (percentuale1) document.getElementById('percentuale1').innerText = `${percentuale1}%`;
         if (percentuale2) document.getElementById('percentuale2').innerText = `${percentuale2}%`;
         if (percentuale3) document.getElementById('percentuale3').innerText = `${percentuale3}%`;
-	if (percentuale1) document.getElementById('rettangolo1').width = `${percentuale1}%`;
-        if (percentuale2) document.getElementById('rettangolo2').width = `${percentuale2}%`;
-        if (percentuale3) document.getElementById('rettangolo3').width = `${percentuale3}%`;
+	rettangolo1.style.width = `${percentuale1}%`;
+        rettangolo2.style.width = `${percentuale2}%`;
+        rettangolo3.style.width = `${percentuale3}%`;
 	if (uccello1) document.getElementById('uccello1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello1}bird.png`;
         if (personalita1) document.getElementById('personalita1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita1}.png`;
         if (personalita2) document.getElementById('personalita2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita2}.png`;
