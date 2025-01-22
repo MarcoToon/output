@@ -31,7 +31,9 @@
 	width: 100%;
 	}
 	.section-2 { 
-	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/green-background.png') no-repeat center/cover;
+	background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 	height: 460px;
 	position: relative;
 	}
@@ -181,8 +183,8 @@
 	</div>
 	<!-- Sezione 2 -->
 	<div class="section section-2">
-	<div class="wrap">
 	<img id="uccello1-image" src="" alt="Bird" class="bird">
+	<div class="wrap">
 	<img src="section-2-1.png" alt="Section Text" class="text-image">
 	<img id="personalita1-image" src="" alt="Section Text" class="tag1">
 	<img src="section-2-2.png" alt="Section Text" class="text-image">
@@ -246,7 +248,7 @@
 	rettangolo1.style.width = `${percentuale1}%`;
         rettangolo2.style.width = `${percentuale2}%`;
         rettangolo3.style.width = `${percentuale3}%`;
-	if (uccello1) document.getElementById('uccello1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello1}bird.png`;
+	section-2.style.backgroundImage = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello1}bird.png`;
         if (personalita1) document.getElementById('personalita1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita1}.png`;
         if (personalita2) document.getElementById('personalita2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita2}.png`;
 	</script>
