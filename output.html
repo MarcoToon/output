@@ -136,20 +136,18 @@
 	z-index: -1;
 	}
 	.section-3 .testosopra {
-	width: 360px;
-	margin-left: 10px;
+	width: 100%;
 	}
 	.section-3 .bottone {
 	position: relative;
-	width: 370px;
-	margin-left: 20px;
+	width: 100%;
 	margin-top: 40px;
 	}
 	.wrap2 { 
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 370px;
+	width: 100%;
 	}
 	.section-4 {
 	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/pink-background.png') no-repeat center/cover;
@@ -157,8 +155,8 @@
 	position: relative;
 	}
 	.section-4 .text-image {
-	width: 350px; /* Adatta la larghezza per dispositivi mobili */
-	margin-top: 55px;
+	width: 100%;
+	margin-top: 50px;
 	}
 	.section-5 {
 	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sky-background2.png') no-repeat center/cover;
@@ -166,7 +164,7 @@
 	position: relative;
 	}
 	.section-5 .text-image {
-	width: 350px; /* Adatta la larghezza per dispositivi mobili */
+	width: 100%;
 	}
         .section-5 img.mano {
 	width: 320px;
@@ -203,17 +201,17 @@
 	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-3-1.png" alt="Immagine 1" class="testosopra">
 	<div class="wrap2">
 	<div class="image-row1">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image1">
+	<img id="rettangolo1" src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image1">
 	<img id="tag1-image" src="" alt="Immagine 1">
 	<div id="percentuale1" class="percentage"></div>
 	</div>
 	<div class="image-row2">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image2">
+	<img id="rettangolo2" src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image2">
 	<img id="tag2-image" src="" alt="Immagine 2">
 	<div id="percentuale2" class="percentage"></div>
 	</div>
 	<div class="image-row3">
-	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image3">
+	<img id="rettangolo3" src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image3">
 	<img id="tag3-image" src="" alt="Immagine 3">
 	<div id="percentuale3" class="percentage"></div>
 	</div>
@@ -249,6 +247,9 @@
 	if (percentuale1) document.getElementById('percentuale1').innerText = `${percentuale1}%`;
         if (percentuale2) document.getElementById('percentuale2').innerText = `${percentuale2}%`;
         if (percentuale3) document.getElementById('percentuale3').innerText = `${percentuale3}%`;
+	if (percentuale1) document.getElementById('rettangolo1').width = `${percentuale1}%`;
+        if (percentuale2) document.getElementById('rettangolo2').width = `${percentuale2}%`;
+        if (percentuale3) document.getElementById('rettangolo3').width = `${percentuale3}%`;
 	if (uccello1) document.getElementById('uccello1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello1}bird.png`;
         if (personalita1) document.getElementById('personalita1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita1}.png`;
         if (personalita2) document.getElementById('personalita2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita2}.png`;
