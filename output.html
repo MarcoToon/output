@@ -22,6 +22,7 @@
 	align-items: center;
 	text-align: center;
 	padding: 20px;
+	overflow: hidden;
 	}
 	.section-1 {
 	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sky-background.png');
@@ -30,7 +31,6 @@
         background-repeat: no-repeat;
 	height: 400px;
 	position: relative;
-	overflow: hidden;
 	}
 	.section-1 .text-image {
 	width: 100%;
@@ -53,6 +53,9 @@
 	text-align: center;
 	width: 100%;
 	overflow: hidden;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
 	}
 	.section-2 .text-image {
 	width: 100%; /* Adatta la larghezza per dispositivi mobili */
@@ -138,17 +141,26 @@
 	}
 	.section-3 .testosopra {
 	width: 100%;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
 	}
 	.section-3 .bottone {
 	position: relative;
 	width: 100%;
 	margin-top: 40px;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
 	}
 	.wrap2 { 
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	width: 100%;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
 	}
 	.section-4 {
 	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/pink-background.png');
@@ -160,7 +172,10 @@
 	}
 	.section-4 .text-image {
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 80px;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
 	}
 	.section-5 {
 	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sky-background2.png');
@@ -172,6 +187,9 @@
 	}
 	.section-5 .text-image {
 	width: 100%;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
 	}
         .section-5 img.mano {
 	width: 320px;
